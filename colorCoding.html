@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .tab{
+        margin-top: 10%;
+        margin-left: 40%;
+        font-size: 50px;
+        width: 200px;
+       } 
+       .btn{
+        margin-left: 41%;
+        padding-top: 10px;
+        margin-top: 2%;
+        text-align: center;
+       }
+       .color{
+        margin-left: -6%;
+        /* padding-top: 5px; */
+        margin-top: 1%;
+        text-align: center;
+       }
+        
+    </style>
+</head>
+<body>
+    
+     <table border="" class="tab">
+        <tr>
+            <td id="d1">1</td>
+            <td id="d2">2</td>
+            <td id="d3">3</td>
+        </tr>
+        <tr>
+            <td id="d4">4</td>
+            <td id="d5">5</td>
+            <td id="d6">6</td>
+        </tr>
+        <tr>
+            <td id="d7">7</td>
+            <td id="d8">8</td>
+            <td id="d9">9</td>
+        </tr>
+    </table>
+
+     <input class="btn" id="number" type="text" name="choice"  placeholder="enter your choice">
+    
+     <div class="color"><label >select color</label>
+     <input  type="color" id="color" name="col"><br><br>
+     <button type="button" onclick="setData()">let's color</button>
+    </div>
+   
+     
+<script>
+   function setData(){
+        var num=document.getElementById("number").value;
+        var ranga=document.getElementById("color").value;
+
+        document.getElementById("d"+num).style.backgroundColor=ranga;
+   }
+</script>
+</body>
+</html>
